@@ -1,0 +1,32 @@
+'''Problem Statement:
+You are given a string s.
+You need to repeatedly remove pairs of adjacent equal characters until no more such pairs exist.
+Finally, print the resulting string.
+If the resulting string becomes empty, print "Empty String".
+
+Input Format:
+
+A single line containing the string s (only lowercase English letters).
+
+Output Format:
+
+Print the final string after all possible adjacent duplicate removals.'''
+
+s = input().strip()
+
+while True:
+    final_s = ""
+    i = 0
+    while i < len(s):
+        if i < len(s) - 1 and s[i] == s[i + 1]:
+            while i < len(s) - 1 and s[i] == s[i + 1]:
+                i += 1
+        else:
+            final_s += s[i]
+        i += 1
+
+    if final_s == s:
+        break
+    s = final_s
+
+print(final_s if final_s else "Empty String")

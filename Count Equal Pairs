@@ -1,3 +1,21 @@
+'''Problem Statement:
+You are given a list of integers.
+You need to count how many pairs of indices (i, j) exist such that:
+
+i < j, and
+
+arr[i] == arr[j]
+
+Input Format:
+
+First line: an integer n (number of elements in the list)
+
+Second line: n space-separated integers
+
+Output Format:
+
+Print a single integer — the total number of equal pairs.'''
+
 n = int(input())
 
 list= input().split(" ")

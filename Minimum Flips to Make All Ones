@@ -1,3 +1,15 @@
+'''Problem Statement:
+You are given a binary string consisting only of '0' and '1'. In one operation, you can choose a prefix of the string and flip all bits in that prefix ('0' becomes '1', '1' becomes '0').
+Your task is to determine the minimum number of operations required to make all bits '1'.
+
+Input Format:
+
+A single line containing a binary string s (1 ≤ |s| ≤ 10⁵)
+
+Output Format:
+
+Print a single integer — the minimum number of operations required.'''
+
 s = input()
 
 flips = 0

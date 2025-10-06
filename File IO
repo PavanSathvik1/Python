@@ -1,0 +1,12 @@
+with open("numbers.txt","w") as f:
+    for i in range(1,6):
+        f.write(f"{i} \n")
+        
+sum = 0
+with open("numbers.txt","r") as f:
+    for line in f:   
+        a = line.strip()
+        a = int(a)
+        sum +=a
+with open("sum.txt","w") as f:
+    f.write(str(sum))

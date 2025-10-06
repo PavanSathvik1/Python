@@ -1,0 +1,25 @@
+nums = []
+for i in range(5):
+    num = int(input())
+    nums.append(num)
+total = 0  
+for i in nums:
+    total+=i
+print(total)
+
+nums = ()
+for i in range(3):
+    city = input()
+    nums = nums + (city,)
+    
+print(nums)
+
+student_marks = {}
+
+for i in range(3):
+    name = input()
+    marks = int(input())
+    
+    student_marks.update({name : marks})
+    
+print(student_marks)

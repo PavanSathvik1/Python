@@ -1,0 +1,12 @@
+for i in range(21):
+    if(i%2==0):
+        print(i)
+boolean = True      
+sum=0  
+while(boolean):
+    num = int(input())
+    if(num==0):
+        print(sum)
+        boolean=False
+    else:
+        sum+=num

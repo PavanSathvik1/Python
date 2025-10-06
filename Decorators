@@ -1,9 +1,8 @@
 def my_decorator(func):
     def wrapper(num):
         print("Good Morning")
-        result = func(num)
+        print(func(num))
         print("Thank you for using")
-        return result
     return wrapper
         
 @my_decorator
@@ -12,7 +11,7 @@ def square(num):
 
 def main():
     n = int(input())
-    print(square(n))
+    square(n)
     
 if __name__ == "__main__":
     main()
